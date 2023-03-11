@@ -6,9 +6,15 @@
 //
 
 import UIKit
+import CoreML
+import Vision
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBOutlet weak var textBox: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +23,9 @@ class ViewController: UIViewController {
     }
 
 
-
+    @IBAction func cameraTapped(_ sender: UIBarButtonItem) {
+        
+    }
+    
 }
 
