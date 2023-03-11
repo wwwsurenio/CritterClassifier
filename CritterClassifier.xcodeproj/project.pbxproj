@@ -294,11 +294,12 @@
 				DEVELOPMENT_TEAM = 726KQZKUA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CritterClassifier/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use your Camera with this app, please approve camera use!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "If you want to use the Photo Library with this app, please approve library use!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,11 +323,12 @@
 				DEVELOPMENT_TEAM = 726KQZKUA4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CritterClassifier/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "If you want to use your Camera with this app, please approve camera use!";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "If you want to use the Photo Library with this app, please approve library use!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
