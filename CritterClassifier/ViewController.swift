@@ -78,23 +78,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             
             if let firstResult = results.first {
                 switch firstResult.identifier {
-                case let id where id.contains("Dog"):
+                case let id where id.contains("Dog") && firstResult.confidence >= 0.81 :
                     self.imageView.image = UIImage(named: "dog")
                     self.navigationItem.title = "It looks like a dog!"
                     self.textBox.text = "This looks like a Dog, our classifier is confident with a \(String(format: "%.0f", (firstResult.confidence * 100))) % "
                     self.textBox.sizeToFit()
-                case let id where id.contains("Cat"):
+                case let id where id.contains("Cat") && firstResult.confidence >= 0.81 :
                     self.imageView.image = UIImage(named: "cat")
                     self.navigationItem.title = "It looks like a cat!"
                     self.textBox.text = "This looks like a Cat, our classifier is confident with a \(String(format: "%.0f", (firstResult.confidence * 100))) % "
                     self.textBox.sizeToFit()
-                case let id where id.contains("Rabbit"):
+                case let id where id.contains("Rabbit") && firstResult.confidence >= 0.81 :
                     self.imageView.image = UIImage(named: "rabbit")
                     self.navigationItem.title = "It looks like a Rabbit!"
                     self.textBox.text = "This looks like a Rabbit, our classifier is confident with a \(String(format: "%.0f", (firstResult.confidence * 100))) % "
                     self.textBox.sizeToFit()
                 default:
                     self.navigationItem.title = "Not a Critter !"
+                    self.textBox.text = "This does not look like any critter we have learned from, our classifier confidence is lower than 80%"
+                    self.textBox.sizeToFit()
                 }
             }
             
